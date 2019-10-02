@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Movies Premiere Schedule</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Generes</a></h1>
+
+            {% for mov in movies %}
+            <div>
+                <h2><a href="">{{ mov.title }}</a></h2>
+                <p>{{ mov.synapsi|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
